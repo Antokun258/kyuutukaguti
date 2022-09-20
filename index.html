@@ -1,0 +1,82 @@
+<html>
+        <div style="background-color:#0f5aa4">
+          <h1><font color="white">塚口駅発</font></h1>
+          <h2><font color="white">西宮北口・神戸三宮方面時刻表(土日祝通学時)</font></h2>
+        </div>
+        <table border="5" bordercolor="#0f5aa4">
+            <body>
+                <tr>
+                    <td>
+                <p id="Clock1" style="display: inline"></p>
+        <script type="text/javascript">
+        setInterval('showClock1()',1000);
+        function showClock1() {
+        var DWs = new Array('日','月','火','水','木','金','土');
+        var Now = new Date();
+        var YY = Now.getYear();
+        if (YY < 2000) { YY += 1900; }
+        var MM = set0( Now.getMonth() + 1 );
+        var DD = set0( Now.getDate() );
+        var DW = DWs[ Now.getDay() ];
+        var hh = set0( Now.getHours() );
+        var mm = set0( Now.getMinutes() );
+        var ss = set0( Now.getSeconds() );
+        var RTime1 ='現在時刻は' + hh + '時' + mm + '分' + ss + '秒';
+        document.getElementById("Clock1").innerHTML = RTime1;
+        }
+        function set0(num) {
+        var ret;
+        if( num < 10 ) { ret = "0" + num; }
+        else { ret = num; }
+        return ret;
+        }
+        </script>
+                    </td>
+                </tr>
+        </body>
+        </table>
+<table border="1">
+    <body>
+        <tr>
+            <td>6:13　<span style="background-color:#000"><span style="color:#fff">　普通　</span></span>　神戸三宮</font></td>
+            <td>6:39　六甲駅着</td>
+        </tr>
+        <tr>
+            <td>6:30　<span style="background-color:#000"><span style="color:#fff">　普通　</span></span>　新開地</font></td>
+            <td>6:53　六甲駅着</td>
+        </tr>
+        <tr>
+            <td>6:46　<span style="background-color:#000"><span style="color:#fff">　普通　</span></span>　神戸三宮</font></td>
+            <td>7:08　六甲駅着</td>
+        </tr>
+        <tr>
+            <td>6:58　<span style="background-color:#000"><span style="color:#fff">　普通　</span></span>　神戸三宮</font></td>
+            <td>7:17　六甲駅着</td>
+        </tr>
+        <tr>
+            <td>7:13　<span style="background-color:#000"><span style="color:#fff">　普通　</span></span>　神戸三宮</font></td>
+            <td>7:38　六甲駅着</td>
+        </tr>
+        <tr>
+            <td>7:24　<span style="background-color:#000"><span style="color:#fff">　普通　</span></span>　神戸三宮</font></td>
+            <td>7:48　六甲駅着</td>
+        </tr>
+        <tr>
+            <td>7:34　<span style="background-color:#000"><span style="color:#fff">　普通　</span></span>　神戸三宮</font></td>
+            <td>7:58　六甲駅着</td>
+        </tr>
+        <tr>
+            <td>7:44　<span style="background-color:#000"><span style="color:#fff">　普通　</span></span>　神戸三宮</font></td>
+            <td>8:08　六甲駅着</td>
+        </tr>
+        <tr>
+            <td>7:54　<span style="background-color:#000"><span style="color:#fff">　普通　</span></span>　神戸三宮</font></td>
+            <td>8:18　六甲駅着</td>
+        </tr>
+        <tr>
+            <td>8:04　<span style="background-color:#000"><span style="color:#fff">　普通　</span></span>　神戸三宮</font></td>
+            <td>8:28　六甲駅着</td>
+        </tr>
+    </body>
+</table>
+</html>
